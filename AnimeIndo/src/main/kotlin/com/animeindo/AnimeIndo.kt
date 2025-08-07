@@ -11,7 +11,8 @@ import org.jsoup.Jsoup
 import org.jsoup.nodes.Element
 
 class AnimeIndo : MainAPI() {
-    override var mainUrl = "https://animeindo.xyz"
+    // URL UTAMA TELAH DIGANTI SESUAI PERMINTAAN
+    override var mainUrl = "https://anime-indo.lol" 
     override var name = "AnimeIndo"
     override val hasMainPage = true
     override var lang = "id"
@@ -162,14 +163,10 @@ class AnimeIndo : MainAPI() {
                     val runTimeInSeconds = runTimeString?.let { rt ->
                         rt.filter { it.isDigit() }.toLongOrNull()?.times(60)
                     }
-                    // Assuming newEpisode has a signature like:
-                    // fun newEpisode(data: String, name: String?, episode: Int?, ..., runtime: Long?): Episode
                     newEpisode(link) {
                         this.data = link
                         this.name = episodeTitleText
                         this.episode = episodeNumber
-                        //this.runtime = runTimeInSeconds
-                        // other parameters...
                     }
                 }
                 .reversed()
