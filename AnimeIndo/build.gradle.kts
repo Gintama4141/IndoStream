@@ -23,5 +23,5 @@ cloudstream {
         "Anime",
     )
 
-    iconUrl = "https://www.google.com/s2/favicons?domain=animeindo.xyz&sz=%size%"
+    iconUrl = "https://www.google.com/s2/favicons?domain=anime-indo.lol&sz=%size%"
 }
