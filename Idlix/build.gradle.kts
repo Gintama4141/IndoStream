@@ -1,5 +1,5 @@
 // use an integer for version numbers
-version = 19
+version = 20
 
 
 cloudstream {
@@ -24,5 +24,5 @@ cloudstream {
         "AsianDrama",
     )
 
-    iconUrl = "hhttps://tv7.idlix.asia/wp-content/uploads/2020/07/logov4.png"
+    iconUrl = "https://tv7.idlixku.com//wp-content/uploads/2020/07/logov4.png"
 }
